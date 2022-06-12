@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.css";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 export const Card = (props) => {
