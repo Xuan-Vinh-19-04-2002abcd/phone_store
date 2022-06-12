@@ -59,10 +59,10 @@
      zoom: 1;
  }
 
- .product .product-price:before,
- .product .product-line-price:before,
- .totals-value:before {
-     content: "$";
+ .product .product-price::after,
+ .product .product-line-price::after,
+ .totals-value::after {
+     content: " VND";
  }
 
  body {
@@ -242,7 +242,7 @@
      }
 
      .product .product-line-price:before {
-         content: "Item Total: $";
+         content: "Item Total: ";
      }
 
      .totals .totals-item label {
