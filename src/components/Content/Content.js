@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card } from "./Card/Card";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route,Link} from "react-router-dom";
 import Detail from "./Detail/Detail";
 function Content() {
   const [listProducts, setListProducts] = useState([]);
-  const [listCart,setListCart] = useState([])
+  const [listCart,setListCart] = useState([]);
+  const [type,setType] = useState('');
   const getData = () => {
     axios
       .get(`https://61bc10bcd8542f001782451a.mockapi.io/Products`)
@@ -30,25 +31,51 @@ function Content() {
         return prevState
       })
   }
+  const handlerOnchange = (e) =>{
+    const val = e.target.value;
+    setType(val);
+    console.log(type);
+  }
   useEffect(()=>{
       getData()
   },[])
   return (
     <>
+      <Link to="/cart">Go to cart</Link>
+      <br></br>
+      <input
+        type="text"
+        value={type}
+        placeholder="Nhập sản phẩm cần tìm kiếm"
+        onChange={handlerOnchange}
+      />
       <div className="col">
-        {listProducts.map((product) => (
-          <Card
-            img={product.image_phone}
-            title={product.name_image}
-            price={product.price_image}
-            saveLocalStorage={() => {
-              addItem(product);
-            }}
-            URL={`/detail/${product.id}`}
-          />
-        ))}
+        {type === ""
+          ? listProducts.map((product) => (
+              <Card
+                img={product.image_phone}
+                title={product.name_image}
+                price={product.price_image}
+                saveLocalStorage={() => {
+                  addItem(product);
+                }}
+                URL={`/detail/${product.id}`}
+              />
+            ))
+          : listProducts
+              .filter((product) => product.name_image.indexOf(type)!==-1)
+              .map((product) => (
+                <Card
+                  img={product.image_phone}
+                  title={product.name_image}
+                  price={product.price_image}
+                  saveLocalStorage={() => {
+                    addItem(product);
+                  }}
+                  URL={`/detail/${product.id}`}
+                />
+              ))}
       </div>
-      
     </>
   );
 

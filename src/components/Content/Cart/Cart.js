@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Cart.css"
 function Cart () {
     const json_cart = JSON.parse(localStorage.getItem("cart"));
-    const [cart,setCart] = useState(json_cart ?? []) ;
+    const [cart,setCart] = useState(json_cart ?? []);
     let total = 0;
     const handlerChange = (e) => {
         const nam = e.target.name;
