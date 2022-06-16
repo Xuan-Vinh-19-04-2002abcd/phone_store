@@ -9,16 +9,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from "react-router-dom";
 import Detail from './components/Content/Detail/Detail';
 import Cart from './components/Content/Cart/Cart';
+import Header from './components/MainLayout/Header';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header></Header>
     <BrowserRouter>
       <Routes>
         <Route path="/detail/:productID" element={<Detail />}></Route>
         <Route path='/' element={<Content/>}></Route>
         <Route path = '/cart' element = {<Cart/>}></Route>
       </Routes>
-      
     </BrowserRouter>
   </React.StrictMode>
 );
