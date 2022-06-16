@@ -147,3 +147,37 @@ input[type="text"] {
   color: rgb(247, 247, 247);
 }
 /* ---------------------------------------- */
+/* ---------------------footer------------------- */
+.Footer-top{
+  background-color: rgb(238, 241, 244);
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+
+
+}
+.content{
+  /* padding-left: 150px; */
+}
+
+.Footer-middle{
+  display: flex;
+  justify-content: space-around;
+}
+.Footer-content{
+  /* padding-left: 150px; */
+}
+img{
+  padding: 7px;
+}
+.Footer-buttom{
+  background-color: rgb(233, 234, 235);
+  width: auto;
+  height: 35px;
+  text-align: center;
+  justify-content: center;
+}
+.Footer{
+  margin-top: 100px;
+}
+/* ------------------------------------------ */

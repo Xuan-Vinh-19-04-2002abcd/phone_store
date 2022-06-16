@@ -2,15 +2,16 @@ import React,{ Component} from "react";
 export default class Footer extends Component {
     render() {
         return (
-            <div className="Footer"> 
-                <div className="row-footer">
-                    <div className="Footer-top">
-                        <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                        <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                        <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                        <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                        <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                    </div>
+            <div className="Footer">
+                <div className="Footer-top">
+                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
+                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
+                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
+                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
+                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
+                </div>
+                <br></br>
+                <div className="Footer-middle">
                     <div className="Footer-content">
                         <b>Thông tin liên hệ</b>
                         <p>Giới thiệu công ty <br></br>Hệ thống cửa hàng<br></br>Chính sách bảo mật<br></br>Mail: online@dcenter.vn</p>
@@ -38,6 +39,8 @@ export default class Footer extends Component {
                     <div className="Footer-content">
                         <b>Thông tin hỗ trợ</b>
                         <p>Giới thiệu công ty <br></br>Hệ thống cửa hàng<br></br>Giới thiệu công ty <br></br>Hệ thống cửa hàng<br></br>Chính sách bảo mật<br></br>Mail: online@dcenter.vn</p>
+                       
+                    
                     </div>
                     <div className="Footer-content">
                         <b>Gọi tư vấn & và khiếu nại</b>
@@ -47,14 +50,15 @@ export default class Footer extends Component {
                             <img src="https://didongthongminh.vn/templates/default/images/fb.svg"/>
                             <img src="https://didongthongminh.vn/templates/default/images/fb.svg"/>
                         </div>
-                    </div> 
-                
-                </div>  
+                    </div>
+                  
+                   
+                </div>     
                 <div className="Footer-buttom">
                         <p >@ Bản quyền thuộc về Công Ty Cổ Phần Viễn Thông Di Động Thông Minh</p>
                 </div> 
+               
             </div>
-            
         );
     }
 }
