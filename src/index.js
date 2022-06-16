@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import Detail from './components/Content/Detail/Detail';
 import Cart from './components/Content/Cart/Cart';
 import Header from './components/MainLayout/Header';
+import Footer from './components/MainLayout/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ root.render(
         <Route path = '/cart' element = {<Cart/>}></Route>
       </Routes>
     </BrowserRouter>
+    <Footer></Footer>
   </React.StrictMode>
 );
 
