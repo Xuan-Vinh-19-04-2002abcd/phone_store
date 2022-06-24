@@ -41,10 +41,9 @@ function Content() {
   },[])
   return (
     <>
-      <Link to="/cart">Go to cart</Link>
-      <br></br>
       <input
         type="text"
+        className="search_phone"
         value={type}
         placeholder="Nhập sản phẩm cần tìm kiếm"
         onChange={handlerOnchange}

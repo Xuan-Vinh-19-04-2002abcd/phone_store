@@ -19,6 +19,9 @@ code {
   font-family: "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
+.container,.Footer{
+  background-color: black;
+}
 .menu-one{
   display: flex;
   justify-content: space-evenly;
@@ -61,8 +64,6 @@ code {
   display: inline-block;
  
 }
-
-
 
 .menu-bottom li {
   float: left;
@@ -109,58 +110,30 @@ code {
   display: flex;
   margin: 13px;
 }
-.search-input{
-  width: 100%;
-  padding: 10px;
-  border: 4px solid #111d5e;
-  border-radius:10px 0 0 10px ;
-  border-right: none;
-  outline: none;
-  font-size: 20px;
-  color: tomato;
-  background: none;
-  
-}
-.search-button{
-  text-align: center;
-  height: 46px;
-  width: 40px;
-  outline: none;
-  cursor: pointer;
-  border: 4px solid #fafaf9;
-  border-radius: 0 10px 10px 0;
-  border-left: none;
-  background: none;
-  font-size: 20px;
-  border-left: 4px solid #e7ecdd;
-  
-}
-input[type="text"] {
+
+.search_phone[type="text"] {
   width: 78%;
   height: 46px;
-  padding: 10px;
-  border: 4px solid #f5f7f1;
-  border-radius: 10px 0 0 10px;
-  border-right: none;
+  margin-top: 2rem;  
   outline: none;
   font-size: 20px;
-  color: rgb(247, 247, 247);
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  width: 20%;
+}
+.cart-link{
+  text-decoration: none;
+  color: black;
 }
 /* ---------------------------------------- */
 /* ---------------------footer------------------- */
-.Footer-top{
-  background-color: rgb(238, 241, 244);
-  display: flex;
-  font-size: 12px;
-  justify-content: space-around;
-
-
-}
 .content{
   /* padding-left: 150px; */
 }
 
 .Footer-middle{
+  padding-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
@@ -171,13 +144,12 @@ img{
   padding: 7px;
 }
 .Footer-buttom{
-  background-color: rgb(233, 234, 235);
   width: auto;
   height: 35px;
   text-align: center;
   justify-content: center;
 }
 .Footer{
-  margin-top: 100px;
+  color: #f5f7f1;
 }
 /* ------------------------------------------ */

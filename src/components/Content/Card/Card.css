@@ -11,7 +11,12 @@
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+  }
+  .card:hover {
+    width: 320px;
+    border-radius: 30px;
+    transition: 0.5s;
   }
   
   .card > img{
@@ -27,7 +32,7 @@
   .card-body>a,
   .card-price{
     margin: 1rem auto;
-    color: #fff;
+    /* color: #fff; */
   }
 
   .card-price::after {
@@ -51,6 +56,7 @@
     border-radius: 12px;
     background-color: rgb(95, 227, 254);
     margin: 0 2rem;
+    height: 35px;
   }
   
   .btn:hover{
