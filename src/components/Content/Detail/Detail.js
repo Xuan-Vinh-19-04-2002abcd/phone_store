@@ -47,32 +47,45 @@ function Detail() {
                    <span class="_price">
                      <b>{product.price_image} VNĐ</b></span>
                  </p>
-                 <div class="accessories" id="accessories">
+                 <div class="accessories">
                    <h4>Khuyến mại</h4>
                    <ul>
-                     <li>Tặng bảo hành toàn diện 6 tháng&nbsp;<a href="https://didongthongminh.vn/bao-hanh-dien-thoai-cu-toan-dien">chi tiết</a></li>
-                     <li>Tặng que chọc sim từ thép không gỉ&nbsp;</li>
-                     <li>Tặng cable Veger C to Lighning trị giá 150,000vnđ chính hãng&nbsp;</li>
-                     <li>Trợ giá sạc nhanh chính hãng Apple giảm 300,000vnđ còn 490,000vnđ</li>
+                     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                     </svg> Tặng bảo hành toàn diện 6 tháng&nbsp;<a href="https://didongthongminh.vn/bao-hanh-dien-thoai-cu-toan-dien">chi tiết</a></li>
+                     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                     </svg> Tặng que chọc sim từ thép không gỉ&nbsp;</li>
+                     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                     </svg> Tặng cable Veger C to Lighning trị giá 150,000vnđ chính hãng&nbsp;</li>
+                     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                     </svg> Trợ giá sạc nhanh chính hãng Apple giảm 300,000 VNĐ còn 490,000 VNĐ</li>
                    </ul>
-                 </div>
-                 <div class="gift_kem accessories">
-                   <h4>Quà tặng kèm</h4>
-                   <div class="list_gift">
-                     <a href="https://didongthongminh.vn/cable-typec-to-lighting-veger-vp312-1m-den" class="item_gift">
-                         <div class="infor_prd">
-                           <span>Cáp Sạc Nhanh 1M Veger VP-312 Type C to Lighting</span>
-                           <span class="price_gift">Giá: <span>150.000đ</span></span>
-                         </div>
-                     </a>
-                   </div>
                  </div>
                  <div class="accessories">
                    <h4>Bảo hành cơ bản</h4>
                    <ul>
-                     <li>Bảo hành 6 tháng tại hệ thống Di Động Thông Minh - <a href="https://didongthongminh.vn/bao-hanh-dien-thoai-cu-toan-dien">chi tiết</a></li>
-                     <li>Bảo hành toàn diện&nbsp;cả nguồn, màn hình, vân tay&nbsp;</li>
-                     <li>1 đổi 1 trong 30 ngày nếu máy có lỗi từ nhà sản xuất</li>
+                     <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                       <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                       <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                     </svg>  Bảo hành 6 tháng tại hệ thống Di Động Thông Minh - <a href="https://didongthongminh.vn/bao-hanh-dien-thoai-cu-toan-dien">chi tiết</a></li>
+                     <li>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                         <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                       </svg> Bảo hành toàn diện&nbsp;cả nguồn, màn hình, vân tay&nbsp;</li>
+                     <li>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                         <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                         <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                       </svg> 1 đổi 1 trong 30 ngày nếu máy có lỗi từ nhà sản xuất</li>
                    </ul>
                  </div>
                 <button class="buy-btn" onClick={() => { addItem(product) }}>Mua ngay</button>
