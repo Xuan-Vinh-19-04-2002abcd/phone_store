@@ -3,14 +3,6 @@ export default class Footer extends Component {
     render() {
         return (
             <div className="Footer">
-                <div className="Footer-top">
-                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                    <p className="content">13 Pro Max Xanh Lá <br></br> Redmi Note 11 Pro</p>
-                </div>
-                <br></br>
                 <div className="Footer-middle">
                     <div className="Footer-content">
                         <b>Thông tin liên hệ</b>

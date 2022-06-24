@@ -19,6 +19,7 @@ export const Card = (props) => {
               Buy now <ion-icon name="cart-outline"></ion-icon>{" "}
             </p>
           </button>
+          
            <Link to = {props.URL}>Detail</Link>
         </div>
       </div>
