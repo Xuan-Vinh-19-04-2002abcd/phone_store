@@ -37,7 +37,7 @@
 }
 
 .accessories>ul>li>a {
-    color: rgb(12, 145, 12);
+    color: rgb(0, 181, 218);
     text-decoration: none;
 }
 .accessories>ul>li>a:hover {
@@ -47,5 +47,5 @@
 }
 
 .bi-check2-circle{
-    color: rgb(12, 145, 12);
+    color: rgb(0, 181, 218);
 }
