@@ -39,44 +39,14 @@ function Detail() {
                <img key={product.id} src={product.image_phone}></img>
                <div className="detail-content">
                 <h3>{product.name_image}</h3>
-                <h5>{product.price_image}</h5>
-                 <div class="box_top_mb">
-                   <div class="list_ct">
-                     <label for="city">Giá tại</label>
-                     <select name="city" id="city" onchange="loadcity(this.value);">
-                       <option selected="" value="1">Hà Nội</option>
-                       <option value="48">Đà Nẵng</option>
-                       <option value="79">TP HCM</option>
-                       <option value="92">Cần Thơ</option>
-                       <option value="19">Thái Nguyên</option>
-                       <option value="31">Hải Phòng</option>
-                       <option value="30">Hải Dương</option>
-                     </select>
-                   </div>
+                 <div class="box_top_mb">   
                    <span class="conhang visible-xs ">
-                     Còn hàng                        </span>
-                   <span class="view_store visible-xs">Xem siêu thị</span>
+                     Còn hàng </span> 
                  </div>
                  <p class="top_prd ">
                    <span class="_price">
-                     23.990.000đ                            </span>
-                   <span class="price_old">
-                     26.990.000đ                                                </span>
-
+                     <b>{product.price_image} VNĐ</b></span>
                  </p>
-                 <div class="edit-price">
-                   <div class="list_same">
-                     <a href="https://didongthongminh.vn/iphone-12-pro-max-cu-dep-128gb" class="item_same ">
-                       <span class="nick_name">128GB</span>
-                       <span class="price_same">22.190.000đ</span>
-                     </a>
-                     <a href="https://didongthongminh.vn/iphone-12-pro-max-256gb-cu-99-dep-nhu-moi" class="item_same active">
-                       <span class="nick_name">256GB</span>
-                       <span class="price_same">23.990.000đ</span>
-                     </a>
-                   </div>
-                   
-                 </div>
                  <div class="accessories" id="accessories">
                    <h4>Khuyến mại</h4>
                    <ul>
