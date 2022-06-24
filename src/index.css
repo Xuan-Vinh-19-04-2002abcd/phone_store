@@ -180,4 +180,11 @@ img{
 .Footer{
   margin-top: 100px;
 }
+.cart_product{
+  text-decoration: none;
+  color: black;
+}
+.cart_product:hover{
+  color: white ;
+}
 /* ------------------------------------------ */

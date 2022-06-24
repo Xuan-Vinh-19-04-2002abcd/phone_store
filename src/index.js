@@ -14,12 +14,12 @@ import Footer from './components/MainLayout/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header></Header>
     <BrowserRouter>
+      <Header></Header>
       <Routes>
         <Route path="/detail/:productID" element={<Detail />}></Route>
-        <Route path='/' element={<Content/>}></Route>
-        <Route path = '/cart' element = {<Cart/>}></Route>
+        <Route path="/" element={<Content />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
       </Routes>
     </BrowserRouter>
     <Footer></Footer>

@@ -4,14 +4,17 @@ import { Card } from "./Card/Card";
 import {Routes, Route,Link} from "react-router-dom";
 import Detail from "./Detail/Detail";
 function Content() {
-  const [listProducts, setListProducts] = useState([]);
+  const json_cart = JSON.parse(localStorage.getItem("cart"));
+  console.log(json_cart);
+  const [listProducts, setListProducts] = useState(json_cart??[]);
   const [listCart,setListCart] = useState([]);
   const [type,setType] = useState('');
   const getData = () => {
     axios
-      .get(`https://61bc10bcd8542f001782451a.mockapi.io/Products`)
+      .get(`http://localhost:4000/data`)
       .then((res) => {
-        setListProducts(res.data);
+        console.log(res.data[0].web)
+        setListProducts(res.data[0].web);
       })
       .catch((error) => console.log(error));
   };
@@ -25,19 +28,20 @@ function Content() {
       }; 
       setListCart ((prev) =>{
         const prevState = [...prev,cart]
-        console.log(prevState);
+        // console.log(prevState);
         const jsonCart = JSON.stringify(prevState)
         localStorage.setItem('cart',jsonCart)
         return prevState
       })
+      alert("Đã thêm vào giỏ hàng thành công");
   }
   const handlerOnchange = (e) =>{
     const val = e.target.value;
     setType(val);
-    console.log(type);
+    // console.log(type);
   }
   useEffect(()=>{
-      getData()
+      getData();
   },[])
   return (
     <>
