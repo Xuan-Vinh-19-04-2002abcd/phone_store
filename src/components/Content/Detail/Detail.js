@@ -29,6 +29,7 @@ function Detail() {
          localStorage.setItem("cart", jsonCart);
          return prevState;
        });
+       alert("Thêm vào giỏ hàng thành công  ")
      };
      return (
        <>
