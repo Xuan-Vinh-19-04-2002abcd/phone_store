@@ -25,3 +25,27 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.accessories{
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+.accessories>ul{
+    list-style: none;
+}
+
+.accessories>ul>li>a {
+    color: rgb(0, 181, 218);
+    text-decoration: none;
+}
+.accessories>ul>li>a:hover {
+    color: rgb(254, 95, 95);
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+.bi-check2-circle{
+    color: rgb(0, 181, 218);
+}
