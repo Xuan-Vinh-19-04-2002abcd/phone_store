@@ -4,14 +4,15 @@ import { Card } from "./Card/Card";
 import {Routes, Route,Link} from "react-router-dom";
 import Detail from "./Detail/Detail";
 function Content() {
-  const [listProducts, setListProducts] = useState([]);
+  const json_cart = JSON.parse(localStorage.getItem("cart"));
+  const [listProducts, setListProducts] = useState(json_cart??[]);
   const [listCart,setListCart] = useState([]);
   const [type,setType] = useState('');
   const getData = () => {
     axios
-      .get(`https://61bc10bcd8542f001782451a.mockapi.io/Products`)
+      .get(`http://localhost:4000/data`)
       .then((res) => {
-        setListProducts(res.data);
+        setListProducts(res.data[0].iphone);
       })
       .catch((error) => console.log(error));
   };
@@ -30,6 +31,7 @@ function Content() {
         localStorage.setItem('cart',jsonCart)
         return prevState
       })
+    alert('Đã thêm vào giỏ hàng thành công')
   }
   const handlerOnchange = (e) =>{
     const val = e.target.value;

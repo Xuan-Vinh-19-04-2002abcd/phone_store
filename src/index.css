@@ -159,4 +159,11 @@ img{
 .cart_product:hover{
   color: white ;
 }
+.trangchu{
+  text-decoration: none;
+  color: white;
+}
+li{
+  cursor: pointer;
+}
 /* ------------------------------------------ */
