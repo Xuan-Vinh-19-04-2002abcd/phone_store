@@ -5,8 +5,9 @@ import {Routes, Route,Link} from "react-router-dom";
 import Detail from "./Detail/Detail";
 function Content() {
   const json_cart = JSON.parse(localStorage.getItem("cart"));
+  console.log(json_cart);
   const [listProducts, setListProducts] = useState(json_cart??[]);
-  const [listCart,setListCart] = useState([]);
+  const [listCart, setListCart] = useState(json_cart ?? []);
   const [type,setType] = useState('');
   const getData = () => {
     axios
