@@ -10,6 +10,8 @@ function Cart () {
         setCart((prev) => {
           const prevState = [...prev];
           prevState[nam].quanlity = val;
+          const jsonCart = JSON.stringify(prevState);
+          localStorage.setItem("cart", jsonCart);
           return prevState;
         });
       }; 
@@ -20,8 +22,9 @@ function Cart () {
       setCart((prev)=>{
         let ar = [];
         const  prevState = [...prev];
-        console.log(prevState);
-        ar= prevState.filter(item => item.id_phone !== id)
+        ar= prevState.filter(item => item.id_phone !== id);
+        const jsonCart = JSON.stringify(ar);
+        localStorage.setItem("cart",jsonCart);
         return ar;
       })
     }
