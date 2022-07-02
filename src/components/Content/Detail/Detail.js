@@ -8,9 +8,9 @@ function Detail() {
     const [detailProduct,setDetailProduct] = useState([])
     useEffect(()=>{
             axios
-              .get(`https://61bc10bcd8542f001782451a.mockapi.io/Products`)
+              .get(`http://localhost:4000/data`)
               .then((res) => {
-                    setDetailProduct(res.data)
+                setDetailProduct(res.data[0].iphone);
               })
               .catch((error) => console.log(error));
     },[])

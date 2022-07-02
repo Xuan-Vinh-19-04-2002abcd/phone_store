@@ -11,6 +11,7 @@ import Detail from './components/Content/Detail/Detail';
 import Cart from './components/Content/Cart/Cart';
 import Header from './components/MainLayout/Header';
 import Footer from './components/MainLayout/Footer';
+import Checkout from "./components/Content/Checkout/Checkout";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ root.render(
         <Route path="/detail/:productID" element={<Detail />}></Route>
         <Route path="/" element={<Content />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/checkout" element={<Checkout />}></Route>
       </Routes>
     </BrowserRouter>
     <Footer></Footer>

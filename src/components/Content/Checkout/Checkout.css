@@ -1,0 +1,31 @@
+.checkout__title{
+  text-align: center;
+  text-transform: uppercase;
+}
+.checkout__field{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.checkout__input{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline-color: #ff00cc;
+}
+.checkout__input:focus{
+  color: #ff00cc;
+}
+.checkout__btn{
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color:#5fe3fe ;
+  cursor: pointer;
+}
+.checkout__btn:hover{
+  background-color:#0ca2c0 ;
+}
